@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover thrilling adventures, unforgettable dramas, and new releases. Your next favorite story starts here.">
+  <title>StreamFlix | Interactive Website Demo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="web1.js" defer></script>
+</head>
+<body class="theme-netflix">
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="STREAMFLIX home">STREAMFLIX</a>
+    <nav aria-label="Main navigation"><a href="#home">Home</a><a href="#catalog">Explore</a><a href="#about">About</a></nav>
+    <button class="header-action" id="headerAction">Get Started</button>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content"><span class="hero-tag">YOUR NEXT FAVORITE</span>
+      <h1>Stories that stay with you.</h1><p>Discover thrilling adventures, unforgettable dramas, and new releases. Your next favorite story starts here.</p>
+      <div class="hero-actions"><a class="primary-btn" href="#catalog">Explore Collection</a><button class="secondary-btn" id="surpriseButton">Surprise Me</button></div>
+      </div><div class="hero-note"><span class="pulse"></span> DEMO EXPERIENCE <span>•</span> BUILT WITH HTML, CSS & JS</div>
+    </section>
+    <section class="catalog" id="catalog">
+      <div class="section-heading"><div><span class="section-kicker">DISCOVER</span><h2>Trending Now</h2></div><span class="result-count" id="resultCount">5 items</span></div>
+      <div class="toolbar"><input id="searchInput" type="search" placeholder="Search titles..." aria-label="Search titles"><span class="muted">Curated for you</span></div>
+      <div class="card-grid" id="cardGrid">      <article class="card" data-name="into the wild adventure · 2026 adventure" data-category="adventure">
+        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=700&q=85" alt="Into the Wild" loading="lazy">
+        <div class="card-body"><p class="eyebrow">Adventure</p><h3>Into the Wild</h3><p class="muted">Adventure · 2026</p>
+        
+        <button class="card-action" data-title="Into the Wild">▶ Play</button></div>
+      </article>      <article class="card" data-name="dark secrets thriller · 2026 thriller" data-category="thriller">
+        <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?auto=format&fit=crop&w=700&q=85" alt="Dark Secrets" loading="lazy">
+        <div class="card-body"><p class="eyebrow">Thriller</p><h3>Dark Secrets</h3><p class="muted">Thriller · 2026</p>
+        
+        <button class="card-action" data-title="Dark Secrets">▶ Play</button></div>
+      </article>      <article class="card" data-name="beyond earth sci-fi · 2026 sci-fi" data-category="sci-fi">
+        <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=700&q=85" alt="Beyond Earth" loading="lazy">
+        <div class="card-body"><p class="eyebrow">Sci-Fi</p><h3>Beyond Earth</h3><p class="muted">Sci-Fi · 2026</p>
+        
+        <button class="card-action" data-title="Beyond Earth">▶ Play</button></div>
+      </article>      <article class="card" data-name="lost horizons drama · 2026 drama" data-category="drama">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=700&q=85" alt="Lost Horizons" loading="lazy">
+        <div class="card-body"><p class="eyebrow">Drama</p><h3>Lost Horizons</h3><p class="muted">Drama · 2026</p>
+        
+        <button class="card-action" data-title="Lost Horizons">▶ Play</button></div>
+      </article>      <article class="card" data-name="midnight city mystery · 2026 mystery" data-category="mystery">
+        <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=700&q=85" alt="Midnight City" loading="lazy">
+        <div class="card-body"><p class="eyebrow">Mystery</p><h3>Midnight City</h3><p class="muted">Mystery · 2026</p>
+        
+        <button class="card-action" data-title="Midnight City">▶ Play</button></div>
+      </article></div>
+      <p class="empty-state" id="emptyState" hidden>No results found. Try another search.</p>
+      <div class="status-message" id="statusMessage" role="status" aria-live="polite">Choose a card to try an interaction.</div>
+    </section>
+    <section class="about" id="about"><div><span class="section-kicker">ABOUT THIS PROJECT</span><h2>A small demo with a big learning goal.</h2></div><p>This is an original portfolio interface inspired by popular streaming or shopping experiences. Search and demo actions work in your browser; real streaming, login, payment, and order services are not connected.</p></section>
+  </main>
+  <footer><span>© 2026 StreamFlix Demo</span><span>Built for learning · HTML · CSS · JavaScript</span></footer>
+</body>
+</html>

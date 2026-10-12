@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse a demo TV guide featuring news, movies, music, and sports channels.">
+  <title>JioWave TV | Interactive Website Demo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="web3.js" defer></script>
+</head>
+<body class="theme-jiotv">
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="JioWave TV home">JioWave TV</a>
+    <nav aria-label="Main navigation"><a href="#home">Home</a><a href="#catalog">Channels</a><a href="#about">About</a></nav>
+    <button class="header-action" id="headerAction">Get Started</button>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content"><span class="hero-tag">LIVE CHANNEL GUIDE</span>
+      <h1>Your entertainment. One screen.</h1><p>Browse a demo TV guide featuring news, movies, music, and sports channels.</p>
+      <div class="hero-actions"><a class="primary-btn" href="#catalog">Browse Channels</a><button class="secondary-btn" id="surpriseButton">Show Featured Channel</button></div>
+      </div><div class="hero-note"><span class="pulse"></span> DEMO EXPERIENCE <span>•</span> BUILT WITH HTML, CSS & JS</div>
+    </section>
+    <section class="catalog" id="catalog">
+      <div class="section-heading"><div><span class="section-kicker">DISCOVER</span><h2>Browse Channels</h2></div><span class="result-count" id="resultCount">5 items</span></div>
+      <div class="toolbar"><input id="searchInput" type="search" placeholder="Search channels..." aria-label="Search channels"><div class="filters"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="news">News</button><button class="filter" data-filter="movies">Movies</button><button class="filter" data-filter="sports">Sports</button><button class="filter" data-filter="music">Music</button></div></div>
+      <div class="card-grid" id="cardGrid">      <article class="card" data-name="daily news news · channel 101 news" data-category="news">
+        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=700&q=85" alt="Daily News" loading="lazy">
+        <div class="card-body"><p class="eyebrow">News</p><h3>Daily News</h3><p class="muted">News · Channel 101</p>
+        
+        <button class="card-action" data-title="Daily News">▶ Watch</button></div>
+      </article>      <article class="card" data-name="movie central movies · channel 202 movies" data-category="movies">
+        <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?auto=format&fit=crop&w=700&q=85" alt="Movie Central" loading="lazy">
+        <div class="card-body"><p class="eyebrow">Movies</p><h3>Movie Central</h3><p class="muted">Movies · Channel 202</p>
+        
+        <button class="card-action" data-title="Movie Central">▶ Watch</button></div>
+      </article>      <article class="card" data-name="sports arena sports · channel 303 sports" data-category="sports">
+        <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=700&q=85" alt="Sports Arena" loading="lazy">
+        <div class="card-body"><p class="eyebrow">Sports</p><h3>Sports Arena</h3><p class="muted">Sports · Channel 303</p>
+        
+        <button class="card-action" data-title="Sports Arena">▶ Watch</button></div>
+      </article>      <article class="card" data-name="music beats music · channel 404 music" data-category="music">
+        <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=700&q=85" alt="Music Beats" loading="lazy">
+        <div class="card-body"><p class="eyebrow">Music</p><h3>Music Beats</h3><p class="muted">Music · Channel 404</p>
+        
+        <button class="card-action" data-title="Music Beats">▶ Watch</button></div>
+      </article>      <article class="card" data-name="nature world documentary · channel 505 documentary" data-category="documentary">
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=700&q=85" alt="Nature World" loading="lazy">
+        <div class="card-body"><p class="eyebrow">Documentary</p><h3>Nature World</h3><p class="muted">Documentary · Channel 505</p>
+        
+        <button class="card-action" data-title="Nature World">▶ Watch</button></div>
+      </article></div>
+      <p class="empty-state" id="emptyState" hidden>No results found. Try another search.</p>
+      <div class="status-message" id="statusMessage" role="status" aria-live="polite">Choose a card to try an interaction.</div>
+    </section>
+    <section class="about" id="about"><div><span class="section-kicker">ABOUT THIS PROJECT</span><h2>A small demo with a big learning goal.</h2></div><p>This is an original portfolio interface inspired by popular streaming or shopping experiences. Search and demo actions work in your browser; real streaming, login, payment, and order services are not connected.</p></section>
+  </main>
+  <footer><span>© 2026 JioWave TV Demo</span><span>Built for learning · HTML · CSS · JavaScript</span></footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore electronics, home essentials, and accessories in this interactive shopping demo.">
+  <title>ShopSphere | Interactive Website Demo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="web4.js" defer></script>
+</head>
+<body class="theme-amazon">
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="ShopSphere home">ShopSphere</a>
+    <nav aria-label="Main navigation"><a href="#home">Home</a><a href="#catalog">Products</a><a href="#about">About</a></nav>
+    <button class="header-action" id="headerAction">View Cart</button>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content"><span class="hero-tag">THE EVERYDAY EDIT</span>
+      <h1>Big discoveries. Better everyday.</h1><p>Explore electronics, home essentials, and accessories in this interactive shopping demo.</p>
+      <div class="hero-actions"><a class="primary-btn" href="#catalog">Shop Collection</a><button class="secondary-btn" id="surpriseButton">See a Deal</button></div>
+      </div><div class="hero-note"><span class="pulse"></span> DEMO EXPERIENCE <span>•</span> BUILT WITH HTML, CSS & JS</div>
+    </section>
+    <section class="catalog" id="catalog">
+      <div class="section-heading"><div><span class="section-kicker">DISCOVER</span><h2>Popular Products</h2></div><span class="result-count" id="resultCount">5 items</span></div>
+      <div class="toolbar shop-toolbar"><input id="searchInput" type="search" placeholder="Search products..." aria-label="Search products"><span class="cart-pill">Cart <b id="cartCount">0</b></span></div>
+      <div class="card-grid" id="cardGrid">      <article class="card" data-name="wireless headphones immersive everyday audio electronics" data-category="electronics">
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=85" alt="Wireless Headphones" loading="lazy">
+        <div class="card-body"><p class="eyebrow">Electronics</p><h3>Wireless Headphones</h3><p class="muted">Immersive everyday audio</p>
+        <p class="price">₹1,999</p>
+        <button class="card-action" data-title="Wireless Headphones">Add to Cart</button></div>
+      </article>      <article class="card" data-name="classic smart watch style meets technology accessories" data-category="accessories">
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=85" alt="Classic Smart Watch" loading="lazy">
+        <div class="card-body"><p class="eyebrow">Accessories</p><h3>Classic Smart Watch</h3><p class="muted">Style meets technology</p>
+        <p class="price">₹2,499</p>
+        <button class="card-action" data-title="Classic Smart Watch">Add to Cart</button></div>
+      </article>      <article class="card" data-name="digital camera capture special moments electronics" data-category="electronics">
+        <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=700&q=85" alt="Digital Camera" loading="lazy">
+        <div class="card-body"><p class="eyebrow">Electronics</p><h3>Digital Camera</h3><p class="muted">Capture special moments</p>
+        <p class="price">₹5,999</p>
+        <button class="card-action" data-title="Digital Camera">Add to Cart</button></div>
+      </article>      <article class="card" data-name="modern desk lamp light up your workspace home" data-category="home">
+        <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=700&q=85" alt="Modern Desk Lamp" loading="lazy">
+        <div class="card-body"><p class="eyebrow">Home</p><h3>Modern Desk Lamp</h3><p class="muted">Light up your workspace</p>
+        <p class="price">₹899</p>
+        <button class="card-action" data-title="Modern Desk Lamp">Add to Cart</button></div>
+      </article>      <article class="card" data-name="travel backpack ready for every adventure accessories" data-category="accessories">
+        <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=700&q=85" alt="Travel Backpack" loading="lazy">
+        <div class="card-body"><p class="eyebrow">Accessories</p><h3>Travel Backpack</h3><p class="muted">Ready for every adventure</p>
+        <p class="price">₹1,299</p>
+        <button class="card-action" data-title="Travel Backpack">Add to Cart</button></div>
+      </article></div>
+      <p class="empty-state" id="emptyState" hidden>No results found. Try another search.</p>
+      <div class="status-message" id="statusMessage" role="status" aria-live="polite">Choose a card to try an interaction.</div>
+    </section>
+    <section class="about" id="about"><div><span class="section-kicker">ABOUT THIS PROJECT</span><h2>A small demo with a big learning goal.</h2></div><p>This is an original portfolio interface inspired by popular streaming or shopping experiences. Search and demo actions work in your browser; real streaming, login, payment, and order services are not connected.</p></section>
+  </main>
+  <footer><span>© 2026 ShopSphere Demo</span><span>Built for learning · HTML · CSS · JavaScript</span></footer>
+</body>
+</html>
